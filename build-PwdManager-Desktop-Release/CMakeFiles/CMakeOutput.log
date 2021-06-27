@@ -1,0 +1,149 @@
+The system is: Linux - 5.8.3-zen+ - x86_64
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /usr/lib/llvm/12/bin/clang++ 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is Clang, found in "/home/user/Desktop/QT/build-PwdManager-Desktop-Release/CMakeFiles/3.18.1/CompilerIdCXX/a.out"
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /home/user/Desktop/QT/build-PwdManager-Desktop-Release/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_dc6ff && [1/2] Building CXX object CMakeFiles/cmTC_dc6ff.dir/CMakeCXXCompilerABI.cpp.o
+clang version 12.0.0
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/lib/llvm/12/bin
+Selected GCC installation: /usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0
+Candidate multilib: .;@m64
+Candidate multilib: 32;@m32
+Selected multilib: .;@m64
+ (in-process)
+ "/usr/lib/llvm/12/bin/clang-12" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model static -mframe-pointer=all -fmath-errno -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu x86-64 -fno-split-dwarf-inlining -debugger-tuning=gdb -v -resource-dir /usr/lib/llvm/12/bin/../../../../lib/clang/12.0.0 -dependency-file CMakeFiles/cmTC_dc6ff.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_dc6ff.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/include/c++/v1 -internal-isystem /usr/local/include -internal-isystem /usr/lib/llvm/12/bin/../../../../lib/clang/12.0.0/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir /home/user/Desktop/QT/build-PwdManager-Desktop-Release/CMakeFiles/CMakeTmp -ferror-limit 19 -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -o CMakeFiles/cmTC_dc6ff.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+clang -cc1 version 12.0.0 based upon LLVM 12.0.0libcxx default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/usr/local/include"
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/include/c++/v1
+ /usr/lib/llvm/12/bin/../../../../lib/clang/12.0.0/include
+ /usr/include
+End of search list.
+[2/2] Linking CXX executable cmTC_dc6ff
+clang version 12.0.0
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/lib/llvm/12/bin
+Selected GCC installation: /usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0
+Candidate multilib: .;@m64
+Candidate multilib: 32;@m32
+Selected multilib: .;@m64
+ "/usr/bin/ld.lld" --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_dc6ff /usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib64/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/crtbegin.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0 -L/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib64 -L/usr/lib/llvm/12/bin/../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../x86_64-pc-linux-gnu/lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../.. -L/lib -L/usr/lib CMakeFiles/cmTC_dc6ff.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lm /usr/lib/llvm/12/bin/../../../../lib/clang/12.0.0/lib/linux/libclang_rt.builtins-x86_64.a -l:libllvm-unwind.so -lc /usr/lib/llvm/12/bin/../../../../lib/clang/12.0.0/lib/linux/libclang_rt.builtins-x86_64.a -l:libllvm-unwind.so /usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/crtend.o /usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib64/crtn.o
+
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/usr/include/c++/v1]
+    add: [/usr/lib/llvm/12/bin/../../../../lib/clang/12.0.0/include]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/usr/include/c++/v1] ==> [/usr/include/c++/v1]
+  collapse include dir [/usr/lib/llvm/12/bin/../../../../lib/clang/12.0.0/include] ==> [/usr/lib/clang/12.0.0/include]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/usr/include/c++/v1;/usr/lib/clang/12.0.0/include;/usr/include]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/user/Desktop/QT/build-PwdManager-Desktop-Release/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/ninja cmTC_dc6ff && [1/2] Building CXX object CMakeFiles/cmTC_dc6ff.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [clang version 12.0.0]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /usr/lib/llvm/12/bin]
+  ignore line: [Selected GCC installation: /usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0]
+  ignore line: [Candidate multilib: .]
+  ignore line: [@m64]
+  ignore line: [Candidate multilib: 32]
+  ignore line: [@m32]
+  ignore line: [Selected multilib: .]
+  ignore line: [@m64]
+  ignore line: [ (in-process)]
+  ignore line: [ "/usr/lib/llvm/12/bin/clang-12" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model static -mframe-pointer=all -fmath-errno -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu x86-64 -fno-split-dwarf-inlining -debugger-tuning=gdb -v -resource-dir /usr/lib/llvm/12/bin/../../../../lib/clang/12.0.0 -dependency-file CMakeFiles/cmTC_dc6ff.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_dc6ff.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/include/c++/v1 -internal-isystem /usr/local/include -internal-isystem /usr/lib/llvm/12/bin/../../../../lib/clang/12.0.0/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir /home/user/Desktop/QT/build-PwdManager-Desktop-Release/CMakeFiles/CMakeTmp -ferror-limit 19 -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -o CMakeFiles/cmTC_dc6ff.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [clang -cc1 version 12.0.0 based upon LLVM 12.0.0libcxx default target x86_64-pc-linux-gnu]
+  ignore line: [ignoring nonexistent directory "/usr/local/include"]
+  ignore line: [ignoring nonexistent directory "/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /usr/include/c++/v1]
+  ignore line: [ /usr/lib/llvm/12/bin/../../../../lib/clang/12.0.0/include]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [[2/2] Linking CXX executable cmTC_dc6ff]
+  ignore line: [clang version 12.0.0]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /usr/lib/llvm/12/bin]
+  ignore line: [Selected GCC installation: /usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0]
+  ignore line: [Candidate multilib: .]
+  ignore line: [@m64]
+  ignore line: [Candidate multilib: 32]
+  ignore line: [@m32]
+  ignore line: [Selected multilib: .]
+  ignore line: [@m64]
+  link line: [ "/usr/bin/ld.lld" --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_dc6ff /usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib64/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/crtbegin.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0 -L/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib64 -L/usr/lib/llvm/12/bin/../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../x86_64-pc-linux-gnu/lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../.. -L/lib -L/usr/lib CMakeFiles/cmTC_dc6ff.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lm /usr/lib/llvm/12/bin/../../../../lib/clang/12.0.0/lib/linux/libclang_rt.builtins-x86_64.a -l:libllvm-unwind.so -lc /usr/lib/llvm/12/bin/../../../../lib/clang/12.0.0/lib/linux/libclang_rt.builtins-x86_64.a -l:libllvm-unwind.so /usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/crtend.o /usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib64/crtn.o]
+    arg [/usr/bin/ld.lld] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_dc6ff] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib64/crt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib64/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/crtbegin.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0]
+    arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib64] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib64]
+    arg [-L/usr/lib/llvm/12/bin/../lib64] ==> dir [/usr/lib/llvm/12/bin/../lib64]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../x86_64-pc-linux-gnu/lib] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../x86_64-pc-linux-gnu/lib]
+    arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../..] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../..]
+    arg [-L/lib] ==> dir [/lib]
+    arg [-L/usr/lib] ==> dir [/usr/lib]
+    arg [CMakeFiles/cmTC_dc6ff.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lc++] ==> lib [c++]
+    arg [-lm] ==> lib [m]
+    arg [/usr/lib/llvm/12/bin/../../../../lib/clang/12.0.0/lib/linux/libclang_rt.builtins-x86_64.a] ==> lib [/usr/lib/llvm/12/bin/../../../../lib/clang/12.0.0/lib/linux/libclang_rt.builtins-x86_64.a]
+    arg [-l:libllvm-unwind.so] ==> lib [-l:libllvm-unwind.so]
+    arg [-lc] ==> lib [c]
+    arg [/usr/lib/llvm/12/bin/../../../../lib/clang/12.0.0/lib/linux/libclang_rt.builtins-x86_64.a] ==> lib [/usr/lib/llvm/12/bin/../../../../lib/clang/12.0.0/lib/linux/libclang_rt.builtins-x86_64.a]
+    arg [-l:libllvm-unwind.so] ==> lib [-l:libllvm-unwind.so]
+    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/crtend.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib64/crtn.o] ==> ignore
+  remove lib [/usr/lib/llvm/12/bin/../../../../lib/clang/12.0.0/lib/linux/libclang_rt.builtins-x86_64.a]
+  remove lib [/usr/lib/llvm/12/bin/../../../../lib/clang/12.0.0/lib/linux/libclang_rt.builtins-x86_64.a]
+  collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0]
+  collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib64] ==> [/usr/lib64]
+  collapse library dir [/usr/lib/llvm/12/bin/../lib64] ==> [/usr/lib/llvm/12/lib64]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../x86_64-pc-linux-gnu/lib] ==> [/usr/x86_64-pc-linux-gnu/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../..] ==> [/usr/lib]
+  collapse library dir [/lib] ==> [/lib]
+  collapse library dir [/usr/lib] ==> [/usr/lib]
+  implicit libs: [c++;m;-l:libllvm-unwind.so;c;-l:libllvm-unwind.so]
+  implicit dirs: [/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0;/usr/lib64;/usr/lib/llvm/12/lib64;/lib64;/usr/x86_64-pc-linux-gnu/lib;/usr/lib;/lib]
+  implicit fwks: []
+
+
