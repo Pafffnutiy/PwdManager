@@ -1,0 +1,4 @@
+/home/user/Desktop/QT/build-PwdManager-Desktop-Debug/CMakeFiles/rebuild_cache.dir
+/home/user/Desktop/QT/build-PwdManager-Desktop-Debug/CMakeFiles/edit_cache.dir
+/home/user/Desktop/QT/build-PwdManager-Desktop-Debug/CMakeFiles/PwdManager.dir
+/home/user/Desktop/QT/build-PwdManager-Desktop-Debug/CMakeFiles/PwdManager_autogen.dir
