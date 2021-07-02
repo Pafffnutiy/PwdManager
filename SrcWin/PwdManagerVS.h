@@ -14,6 +14,7 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget* parent = nullptr);
     ~MainWindow();
+    void SetFilename(QString name);
 
 private slots:
     void on_GetPassword_clicked();
@@ -22,6 +23,7 @@ private slots:
 
     void on_Quit_clicked();
 private:
+    QString filename;
     Ui::MainWindow* ui;
     void HideAll();
 };

@@ -4,13 +4,13 @@
 #include <QTextStream>
 #include <QString>
 #include <QAction>
-#include <map>
+#include <QMap>
 #include "./ui_mainwindow.h"
 
 static
-std::map<QString, QString> GetMap(QFile& f)
+QMap<QString, QString> GetMap(QFile& f)
 {
-    std::map<QString, QString> result;
+    QMap<QString, QString> result;
     QString stroka, service, password;
     QTextStream stream(&f);
     while (!stream.atEnd())
@@ -41,13 +41,16 @@ MainWindow::MainWindow(QWidget* parent)
     ui->Empty->setStyleSheet("QLabel {color : red; }");
     ui->ExistSRV->setStyleSheet("QLabel {color : red; }");
     ui->Quit->setShortcut(tr("CTRL+Q"));
-    //QObject::connect(&(ui->Quit), SIGNAL(clicked()), &app, SLOT(quit()));
-    //connect(quit, &QAction::triggered, qApp, &QApplication::quit);
 }
 
 MainWindow::~MainWindow()
 {
     delete ui;
+}
+
+void MainWindow::SetFilename(QString name)
+{
+    filename = name;
 }
 
 void MainWindow::HideAll()
@@ -66,13 +69,13 @@ void MainWindow::on_GetPassword_clicked()
     if (ui->Service->text().size() != 0)
     {
         ui->Password->setText("");
-        QFile file("List.txt");
+        QFile file(filename);
         QString pwd, srv;
         if (file.open(QIODevice::ReadOnly))
         {
             if (file.size())
             {
-                std::map<QString, QString> slovar=GetMap(file);
+                QMap<QString, QString> slovar = GetMap(file);
 ;                /*QTextStream in(&file);
                 while (!in.atEnd())
                 {
@@ -121,17 +124,17 @@ void cipher(QString& obj);
 void MainWindow::on_Add_clicked()
 {
     HideAll();
-    QFile file("List.txt");
+    QFile file(filename);
     QTextStream in(&file);
     QTextStream out(&file);
     QString srv;
-    std::map<QString, QString> slovar;
+    QMap<QString, QString> slovar;
 
     if (ui->Service->text().size() != 0)
     {
         if (ui->Password->text().size() != 0)
         {
-            if (!QFile::exists("List.txt"))
+            if (!QFile::exists(filename))
             {
                 file.open(QIODevice::WriteOnly);
                 file.close();
@@ -152,8 +155,8 @@ void MainWindow::on_Add_clicked()
                 QString pwd = ui->Password->text();
                 //cipher(pwd);
                 slovar[ui->Service->text().toLower()] = pwd;
-                for(const auto& elem:slovar)
-                    out << elem.first.toLower() << " Password: " << elem.second << '\n';
+                for (const auto& elem : slovar.keys())
+                    out << elem.toLower() << " Password: " << slovar[elem] << '\n';
                 ui->Service->setText("");
             }
             else {
